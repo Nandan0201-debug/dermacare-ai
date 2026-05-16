@@ -76,7 +76,7 @@ function App() {
     formData.append("file", image);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/analyze", {
+      const response = await fetch("https://dermacare-ai-8g05.onrender.com/analyze", {
         method: "POST",
         body: formData,
       });
@@ -537,7 +537,7 @@ ${cleanValue(report.disclaimer)}
     ]);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/chat", {
+      const response = await fetch("https://dermacare-ai-8g05.onrender.com/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
