@@ -90,27 +90,7 @@ PDF + Chatbot Output
 
 # Screenshots
 
-## Landing Page
-
-![Landing Page](./screenshots/landing-page.png)
-
-Modern healthcare-style landing page with AI workflow overview and responsive UI.
-
----
-
-## Analysis Dashboard
-
-![Analysis Dashboard](./screenshots/analysis-dashboard.png)
-
-Image upload, real-time preview, AI analysis pipeline, PDF generation, and chatbot guidance dashboard.
-
----
-
-## Generated AI Medical Report
-
-![Medical Report](./screenshots/medical-report.png)
-
-AI-generated triage report showing predicted condition, confidence score, risk assessment, and downloadable PDF support.
+Screenshots can be added here after capturing the landing page, analysis dashboard, and generated medical report.
 
 ---
 
@@ -163,7 +143,11 @@ Create a `.env` file inside backend folder.
 
 ```env
 GROQ_API_KEY=your_api_key_here
+GROQ_VISION_MODEL=meta-llama/llama-4-scout-17b-16e-instruct
+GROQ_CHAT_MODEL=llama-3.1-8b-instant
 ```
+
+Only `GROQ_API_KEY` is required. The model variables are optional and have defaults in the backend code.
 
 ---
 
@@ -217,11 +201,6 @@ dermacare-ai/
 │   │   └── main.jsx
 │   ├── package.json
 │   └── vite.config.js
-│
-├── screenshots/
-│   ├── landing-page.png
-│   ├── analysis-dashboard.png
-│   └── medical-report.png
 │
 ├── README.md
 └── .gitignore
