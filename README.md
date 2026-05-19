@@ -2,7 +2,19 @@
 
 ## AI-Powered Skin & Wound Triage Web Application
 
-DermaCare AI is an advanced AI-powered medical triage platform that analyzes skin and wound images using computer vision and large language models. The application generates preliminary condition predictions, risk analysis, AI-generated medical reports, downloadable PDFs, and chatbot-based follow-up guidance.
+DermaCare AI is an advanced AI-powered medical triage platform that analyzes skin and wound images using Groq Vision API and Groq LLM API. The application generates preliminary condition predictions, risk analysis, AI-generated medical reports, downloadable PDFs, and chatbot-based follow-up guidance.
+
+---
+
+# Live Demo
+
+## Website
+
+https://dermacare-ai.vercel.app
+
+## Backend API
+
+https://dermacare-ai-8g05.onrender.com
 
 ---
 
@@ -37,6 +49,14 @@ DermaCare AI is an advanced AI-powered medical triage platform that analyzes ski
 - Python
 - Groq Vision API
 - Groq LLM API
+- Pillow
+- Uvicorn
+- Python-dotenv
+
+## Deployment
+
+- Frontend: Vercel
+- Backend: Render
 
 ---
 
@@ -68,12 +88,39 @@ PDF + Chatbot Output
 
 ---
 
+# Screenshots
+
+## Landing Page
+
+![Landing Page](./screenshots/landing-page.png)
+
+Modern healthcare-style landing page with AI workflow overview and responsive UI.
+
+---
+
+## Analysis Dashboard
+
+![Analysis Dashboard](./screenshots/analysis-dashboard.png)
+
+Image upload, real-time preview, AI analysis pipeline, PDF generation, and chatbot guidance dashboard.
+
+---
+
+## Generated AI Medical Report
+
+![Medical Report](./screenshots/medical-report.png)
+
+AI-generated triage report showing predicted condition, confidence score, risk assessment, and downloadable PDF support.
+
+---
+
 # Installation Guide
 
 ## Clone Repository
 
 ```bash
 git clone https://github.com/Nandan0201-debug/dermacare-ai.git
+cd dermacare-ai
 ```
 
 ---
@@ -122,6 +169,16 @@ GROQ_API_KEY=your_api_key_here
 
 # API Endpoints
 
+## Health Check
+
+```http
+GET /
+```
+
+Returns backend running status.
+
+---
+
 ## Analyze Image
 
 ```http
@@ -142,16 +199,33 @@ Handles follow-up chatbot interactions.
 
 ---
 
-# Screenshots
+# Project Structure
 
-## Landing Page
-Add screenshot here
-
-## Analysis Dashboard
-Add screenshot here
-
-## PDF Report
-Add screenshot here
+```text
+dermacare-ai/
+│
+├── backend/
+│   ├── main.py
+│   ├── requirements.txt
+│   ├── runtime.txt
+│   └── .env
+│
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js
+│
+├── screenshots/
+│   ├── landing-page.png
+│   ├── analysis-dashboard.png
+│   └── medical-report.png
+│
+├── README.md
+└── .gitignore
+```
 
 ---
 
@@ -164,22 +238,14 @@ Add screenshot here
 - Medical history tracking
 - Multi-language support
 - AI wound healing tracking
+- User authentication
+- Report history dashboard
 
 ---
 
-# Deployment
+# Medical Disclaimer
 
-## Frontend
-- Vercel
-
-## Backend
-- Render
-
----
-
-# Disclaimer
-
-This project provides AI-assisted preliminary guidance only and is not a replacement for professional medical diagnosis or treatment.
+This project provides AI-assisted preliminary guidance only and is not a replacement for professional medical diagnosis or treatment. Users should always consult a licensed healthcare professional for medical concerns.
 
 ---
 
@@ -187,11 +253,9 @@ This project provides AI-assisted preliminary guidance only and is not a replace
 
 ## Jothisk Nandan Palla
 
-GitHub:
-https://github.com/Nandan0201-debug
+GitHub: https://github.com/Nandan0201-debug
 
-LinkedIn:
-https://linkedin.com/in/palla-jothisk-nandan
+LinkedIn: https://linkedin.com/in/palla-jothisk-nandan
 
 ---
 
