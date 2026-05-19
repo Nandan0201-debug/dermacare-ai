@@ -102,6 +102,8 @@ PDF + Chatbot Output
 
 ![Generated Medical Report](./screenshots/medical-report.png)
 
+Sample PDF report: [dermacare-ai-medical-report.pdf](./samples/sample-medical-report.pdf)
+
 ---
 
 # Installation Guide
