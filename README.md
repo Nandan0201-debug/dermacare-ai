@@ -90,7 +90,17 @@ PDF + Chatbot Output
 
 # Screenshots
 
-Screenshots can be added here after capturing the landing page, analysis dashboard, and generated medical report.
+## Landing Page
+
+![Landing Page](./screenshots/landing-page.png)
+
+## Analysis Dashboard
+
+![Analysis Dashboard](./screenshots/analysis-dashboard.png)
+
+## Generated Medical Report
+
+![Generated Medical Report](./screenshots/medical-report.png)
 
 ---
 
