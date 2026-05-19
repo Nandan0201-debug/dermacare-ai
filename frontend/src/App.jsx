@@ -703,7 +703,7 @@ ${cleanValue(report.disclaimer)}
             <div className="feature-card">
               <Activity />
               <h3>AI Vision Analysis</h3>
-              <p>CLIP-based AI model screens the image and predicts possible conditions.</p>
+              <p>Groq vision analysis reviews the image and predicts possible findings.</p>
             </div>
 
             <div className="feature-card">

@@ -35,9 +35,7 @@ DermaCare AI is an advanced AI-powered medical triage platform that analyzes ski
 
 - FastAPI
 - Python
-- CLIP Model
-- Transformers
-- Torch
+- Groq Vision API
 - Groq LLM API
 
 ---
@@ -45,8 +43,8 @@ DermaCare AI is an advanced AI-powered medical triage platform that analyzes ski
 # System Workflow
 
 1. Upload a skin or wound image
-2. AI model analyzes the image
-3. CLIP predicts possible condition
+2. Groq vision model analyzes the image
+3. AI predicts possible visual findings
 4. Risk level and confidence are calculated
 5. AI-generated triage report is created
 6. PDF report becomes downloadable
@@ -61,7 +59,7 @@ Frontend (React + Vite)
         ↓
 FastAPI Backend
         ↓
-CLIP Image Analysis Model
+Groq Vision Analysis
         ↓
 Groq LLM Report Generation
         ↓
